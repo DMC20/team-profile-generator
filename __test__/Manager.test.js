@@ -19,4 +19,3 @@ test('check manager role to be manager', () => {
 
     expect(manager.getRole()).toBe('Manager');
 })
-
