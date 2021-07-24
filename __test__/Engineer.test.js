@@ -1,9 +1,21 @@
-const Engineer = require('../lib/Employee');
+const Engineer = require('../lib/Engineer');
 
 test('create a new engineer object', () => {
-    const engineer = new Employee("Daniel");
+    const engineer = new Engineer("Daniel");
 
-    expect(employee.name).toBe('Daniel');
-    expect(employee.id).toEqual(expect.any(String));
-    expect(employee.email).toEqual(expect.any(String));
-});
+    expect(engineer.name).toBe('Daniel');
+    // expect(engineer.id).toEqual(expect.any(String));
+    expect(engineer.email).toEqual(expect.any(String));
+})
+
+test('check for github username', () => {
+    const engineer = new Engineer('Daniel');
+
+    expect(engineer.getGitHub()).toEqual(expect.any(String));
+})
+
+test('check engineer role to be engineer', () => {
+    const engineer = new Engineer('Daniel');
+
+    expect(engineer.getRole()).toBe('Engineer');
+})
