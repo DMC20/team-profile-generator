@@ -4,7 +4,7 @@ test('create a new manager object', () => {
     const manager = new Manager('Daniel');
 
     expect(manager.name).toBe('Daniel');
-    // expect(manager.id).toEqual(expect.any(String));
+    expect(manager.id).toEqual(expect.any(String));
     expect(manager.email).toEqual(expect.any(String));
 })
 
