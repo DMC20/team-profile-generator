@@ -8,7 +8,8 @@ const renderHTML = require('./src/generateHTML');
 const Manager = require ('./lib/Manager');
 const Intern = require ('./lib/Intern');
 const Engineer = require ('./lib/Engineer');
-const { emit } = require('process');
+
+// employee roster array
 let employeeRoster = [];
 
 // Manager questions
@@ -167,3 +168,26 @@ const employeeQuestions = () => {
         }
     })
 };
+
+function writeFile (data) {
+    fs.writeFile('./dist/index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Your employee roster has been created!")
+        }
+    })
+};
+
+managerQuestions ()
+.then(employeeQuestions)
+.then(employeeRoster => {
+    return renderHTML(employeeRoster);
+})
+.then (rosterHTML => {
+    return writeFile(rosterHTML);
+})
+.catch(err => {
+    console.log(err);
+});
