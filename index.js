@@ -80,7 +80,7 @@ const managerQuestions = () => {
 const employeeQuestions = () => {
     return inquirer.prompt ([
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'role',
             message: "Please select the employee's role.",
             choices: ['Engineer', 'Intern']
@@ -94,6 +94,19 @@ const employeeQuestions = () => {
                     return true;
                 } else {
                     console.log("Pease enter the emmployee's name")
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "Please enter the employee's ID.",
+            validate: idInput => {
+                if (idInput) {
+                    return true;
+                } else {
+                    console.log('Please enter an employee ID.')
                     return false;
                 }
             }
@@ -148,14 +161,14 @@ const employeeQuestions = () => {
         }
     ])
     .then (employeeTeam => {
-        const {role, name, email, git, school, addEmployee } = employeeTeam;
+        const {role, name, id, email, git, school, addEmployee } = employeeTeam;
         let roster;
 
         if (role === 'Engineer') {
             roster = new Engineer (name, id, email, git);
             console.log(roster);
         } else if (role === "Intern") {
-            roster = new Intern (name,id, email, school);
+            roster = new Intern (name, id, email, school);
             console.log(roster);
         }
 
