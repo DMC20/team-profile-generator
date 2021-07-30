@@ -2,6 +2,7 @@
 const inquirer = require ('inquirer');
 const fs = require('fs')
 
+// render html file path
 const renderHTML = require('./src/generateHTML');
 
 // module exports
@@ -77,6 +78,7 @@ const managerQuestions = () => {
     });
 };
 
+// engineer / intern questions 
 const employeeQuestions = () => {
     return inquirer.prompt ([
         {

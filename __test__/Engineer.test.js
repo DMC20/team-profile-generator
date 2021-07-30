@@ -4,7 +4,6 @@ test('create a new engineer object', () => {
     const engineer = new Engineer("Daniel");
 
     expect(engineer.name).toBe('Daniel');
-    // expect(engineer.id).toEqual(expect.any(String));
     expect(engineer.email).toEqual(expect.any(String));
 })
 

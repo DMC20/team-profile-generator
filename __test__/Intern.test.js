@@ -4,7 +4,6 @@ test('create a new intern object', () => {
     const intern = new Intern ('Daniel');
 
     expect(intern.name).toBe("Daniel");
-
     expect(intern.email).toEqual(expect.any(String));
 })
 
