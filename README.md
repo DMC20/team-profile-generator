@@ -18,5 +18,5 @@ ensure that Jest has been installed. (npm install --save-dev jest)
 
 ## Questions
 Please feel free to contact me directly on the links provided:
-Email: danielcarazo20@gmail.com
-Github: 
+#### Email: danielcarazo20@gmail.com
+#### Github: [DMC20] (https://github.com/DMC20)
