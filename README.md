@@ -14,7 +14,6 @@ Employee files were ran and tested with Jest, a Javascript testing framework. If
 ensure that Jest has been installed. (npm install --save-dev jest)
 
 ## Screenshots and Video Walkthrough 
-https://drive.google.com/file/d/1o7agvApxbGazbw86mBlLWGEY2xEwGMNE/view
 
 
 ## Questions
