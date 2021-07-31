@@ -15,10 +15,12 @@ ensure that Jest has been installed. (npm install --save-dev jest)
 
 ## Screenshots and Video Walkthrough 
 ![image](https://user-images.githubusercontent.com/80017361/127754751-2cd53e30-a8be-4769-bf6e-a075a21e84e9.png)
+![image](https://user-images.githubusercontent.com/80017361/127754765-cb26fec3-88ce-49ed-983b-bcae9d68b60c.png)
+
 
 
 
 ## Questions
 Please feel free to contact me directly on the links provided:
 #### Email: danielcarazo20@gmail.com
-#### Github: [DMC20] (https://github.com/DMC20)
+#### Github: ![DMC20] (https://github.com/DMC20)
