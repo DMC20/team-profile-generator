@@ -2,16 +2,16 @@
 const createMgr = function (manager) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100 shadow">
+            <div class="card-header bg-primary text-white">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4><i class="material-icons">laptop_mac</i>
             </div>
 
             <div class="card-body">
-                <p class="id">ID: ${manager.id}</p>
-                <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p class="office">Office Number: ${manager.officeNumber}</p>
+                <p>ID: ${manager.id}</p>
+                <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+                <p>Office Number: ${manager.officeNumber}</p>
             </div>
         </div>
     </div>`;
@@ -21,15 +21,15 @@ const createMgr = function (manager) {
 const createEng = function (engineer) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100 shadow">
+            <div class="card-header bg-primary text-white">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Engineer</h4><i class="material-icons">engineering</i>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${engineer.id}</p>
-                <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p class="github">Github: <a href="https://github.com/${engineer.githubUser}" target = "_blank">${engineer.githubUser}</a></p>
+                <p>ID: ${engineer.id}</p>
+                <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                <p>Github: <a href="https://github.com/${engineer.githubUser}" target = "_blank">${engineer.githubUser}</a></p>
             </div>
         </div>
     </div>`;
@@ -39,15 +39,15 @@ const createEng = function (engineer) {
 const createInt = function (intern) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+        <div class="card h-100 shadow">
+            <div class="card-header bg-primary text-white">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4>Intern</h4><i class="material-icons">badge</i>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
-                <p class="school">School: ${intern.schoolInfo}</p>
+                <p>ID: ${intern.id}</p>
+                <p>Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p>School: ${intern.schoolInfo}</p>
             </div>
         </div>
     </div>`;  
@@ -94,25 +94,27 @@ const generateTeam = (roster) => {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Team Profile</title>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         </head>
         <body>
             <div>
-                <nav class="navbar" id="navbar">
+                <nav class="navbar bg-danger text-white">
                     <span class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text"><h1>My Team</h1></span>
                 </nav>
             </div>
             <div>
                 <div class="container">
                     <div class="row justify-content-center" id="team-cards">
-                        <!--Team Cards-->
                         ${roster}
                     </div>
                 </div>
             </div>
       
         </body>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </html>
     `;
