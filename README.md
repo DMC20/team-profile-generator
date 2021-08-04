@@ -13,7 +13,14 @@ inquirer package.
 Employee files were ran and tested with Jest, a Javascript testing framework. If you'd like to run tests as well, please 
 ensure that Jest has been installed. (npm install --save-dev jest)
 
-## Screenshots and Video Walkthrough 
+## Screenshots and Video Link
+Screencastify Link - https://drive.google.com/file/d/1o7agvApxbGazbw86mBlLWGEY2xEwGMNE/view
+
+![image](https://user-images.githubusercontent.com/80017361/127754751-2cd53e30-a8be-4769-bf6e-a075a21e84e9.png)
+
+![image](https://user-images.githubusercontent.com/80017361/127754765-cb26fec3-88ce-49ed-983b-bcae9d68b60c.png)
+
+
 
 
 ## Questions
